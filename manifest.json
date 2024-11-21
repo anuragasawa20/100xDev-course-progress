@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "100xDev Course Progress Tracker",
+    "version": "1.0",
+    "description": "Tracks completed lectures in your online course",
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "icons": {
+        "128": "128p.png"
+    }
+}
